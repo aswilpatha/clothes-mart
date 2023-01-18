@@ -2,6 +2,7 @@ import { ProductDateService } from "@core/index";
 import { Component, OnDestroy, OnInit, ViewChild } from "@angular/core";
 import { MatPaginator, MatSort, MatTableDataSource } from "@angular/material";
 import { Product } from "@core/products/product";
+import { CartService } from "@core/cart/cart.service";
 
 @Component({
   selector: "pm-products",
@@ -19,7 +20,7 @@ export class ProductsComponent implements OnInit, OnDestroy {
   @ViewChild(MatPaginator) paginator:MatPaginator;
 
 
-  constructor(private productDataService: ProductDateService) {}
+  constructor(private productDataService: ProductDateService, private cartService: CartService) {}
 
   ngOnInit() {
     this.subscriptions.push(
@@ -35,6 +36,11 @@ export class ProductsComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     this.subscriptions.forEach(s => s.unsubscribe());
   }
+
+  addItemToCart(product){
+    this.cartService.addToCart(product, 2);
+  }
+
   onDataLoad(products: Product[]) {
     this.loading = false;
     this.dataSource.sort = this.sort;

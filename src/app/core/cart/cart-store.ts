@@ -1,8 +1,8 @@
-import { Injectable } from "@angular/core";
-import { LogService } from "@core/log.service";
 import { Store } from "@core/store";
 import { CartItem } from "./cart-item";
+import { Injectable } from "@angular/core";
 import { CartState, initialState } from "./cart-state";
+import { LogService } from "@core/log.service";
 
 @Injectable({ providedIn: "root" })
 export class CartStore extends Store<CartState> {
@@ -10,55 +10,44 @@ export class CartStore extends Store<CartState> {
     super(initialState);
   }
 
-  addCartItem(cartItemToAdd: CartItem) {
-    console.log("[Cart] Add Cart Item");
+  addCartItem = (cartItemToAdd: CartItem) => {
+    this.logService.log("[Cart] Add Item", cartItemToAdd);
 
-    const newState = {
-      ...this.state, //cartItems
-      cartItems: [].concat(this.state.cartItems, cartItemToAdd),
-    };
+    this.setState({
+      ...this.state,
+      cartItems: [].concat(this.state.cartItems, cartItemToAdd)
+    });
+  };
 
-    this.setState(newState);
-  }
-  clearCart() {
-    console.log("[Cart] Clear Cart Item");
+  updateCartItem = (cartItemToUpdate: CartItem) => {
+    this.logService.log("[Cart] Update Item", cartItemToUpdate);
 
-    const newState = initialState;
+    const newCartItems = this.state.cartItems.map(i =>
+      i.id === cartItemToUpdate.id ? cartItemToUpdate : i
+    );
 
-    this.setState(newState);
-  }
-  restoreCart(stateToRestore: CartState) {
-    console.log("[Cart] Restore Cart Item");
+    this.setState({
+      ...this.state,
+      cartItems: newCartItems
+    });
+  };
 
-    this.setState(stateToRestore);
-  }
+  removeCartItem = (cartItemToRemove: CartItem) => {
+    this.logService.log("[Cart] Remove Item", cartItemToRemove);
 
-  removeCartItem(cartItemToRemove: import("./cart-item").CartItem) {
-    console.log("[Cart] Remove Cart Item");
+    const newCartItems = this.state.cartItems.filter(
+      i => i.id !== cartItemToRemove.id
+    );
 
-    const newState = {
-      ...this.state, //cartItems
-      cartItems: this.state.cartItems.filter(
-        (cartItem) => cartItem.productId != cartItemToRemove.productId
-      ),
-    };
+    this.setState({
+      ...this.state,
+      cartItems: newCartItems
+    });
+  };
 
-    this.setState(newState);
-  }
+  clearCart = () => {
+    this.logService.log("[Cart] Clear Item");
 
-  updateCartitem(cartItemToUpdate: CartItem) {
-    console.log("[Cart] Update Cart Item");
-
-    const newState = {
-      ...this.state, //cartItems
-      cartItems: this.state.cartItems.map(
-        cartItem =>
-          cartItem.productId == cartItemToUpdate.productId
-            ? cartItemToUpdate
-            : cartItem
-      ),
-    };
-
-    this.setState(newState);
-  }
+    this.setState(initialState);
+  };
 }
