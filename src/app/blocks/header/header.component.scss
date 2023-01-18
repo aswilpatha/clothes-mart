@@ -1,0 +1,33 @@
+
+    .example-toolbar {
+      background-color:black;
+    }
+  
+    a {
+      margin: 2px;
+    }
+   
+    .logo{
+      background-image: url('../../../assets/images-removebg-preview.png');
+      height: 50px;
+      width: 50px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-right: 0.2em;
+      margin: 0px;
+      padding: 0px;
+    }
+
+
+      .header-spacer{
+        flex: 1 1 auto;
+      }
+    
+    .mat-icon{
+      vertical-align: middle;
+      margin: 0 5px ;
+    }
+  
+   
+  
+  
