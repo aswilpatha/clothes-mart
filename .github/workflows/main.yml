@@ -29,6 +29,7 @@ jobs:
             git pull
             export NVM_DIR=~/.nvm
             source ~/.nvm/nvm.sh
+            touch .env
             npm install
             npm run build
             rm -rfv /var/www/html/
