@@ -1,5 +1,10 @@
 <mat-card class="example-card">
   <mat-card-content>
+    <div layout="column" flex >   
+      <video layout-fill loop="loop"  autoplay="autoplay" preload="auto" style="width: 99.95%;height: 10%;"  muted>
+      <source src="../../../assets/videoplayback.mp4" type="video/mp4"/>
+      </video>   
+    </div>
     <mat-form-field class="full-width">
       <input
         matInput
@@ -8,6 +13,7 @@
       />
       <mat-icon matSuffix class="search-icon">search</mat-icon>
     </mat-form-field>
+   
 
     <table matSort mat-table [dataSource]="dataSource" class="mat-elevation-z8">
       <!--- Note that these columns can be defined in any order.
