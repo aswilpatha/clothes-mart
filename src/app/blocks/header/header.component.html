@@ -13,8 +13,9 @@
       <div fxShow="true" fxHide.lt-md="true">
         <a
           mat-stroked-button
-          routerLink="/products"
-          >Products</a
+          routerLink="/products" routerLinkActive="active-link" style="padding-left: 10px;margin-left: 15px;"
+          >
+          <mat-icon>store_mall_directory</mat-icon>Products</a
         >
       </div>
       <span class="header-spacer"></span>
@@ -23,6 +24,7 @@
         mat-stroked-button
         routerLink="/auth"
         routerLinkActive="active-link"
+        style="margin-right: 15px;padding-left: 5px;"
         >
         <mat-icon>
           person_outliner
@@ -30,7 +32,7 @@
         Login</a
       >
       <div>
-        <a mat-button *ngIf="user" [matMenuTriggerFor]="menu">
+        <a mat-button *ngIf="user" [matMenuTriggerFor]="menu" style="margin-right: 15px;">
           <mat-icon>account_circle</mat-icon>
 
           <span fxShow="true" fxHide.lt-md="true">{{user.fullname}}</span>

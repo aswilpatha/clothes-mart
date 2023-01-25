@@ -1,33 +1,110 @@
 [
     {
-      "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/M63H24W7JF0-L302-ALTGHOST?wid=1500&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
-      "name": "CHECK PRINT SHIRT",
-      "price": 110,
+      "imgUrl": "./assets/A7300369_2048x-removebg-preview.png",
+      "name": "FLEECE HOODIE - UNISEX- BLACK",
+      "price": 3500,
       "id": 1
     },
     {
-      "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/FLGLO4FAL12-BEIBR?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
-      "name": "GLORIA HIGH LOGO SNEAKER",
-      "price": 91,
+      "imgUrl": "./assets/A7304428_540x-removebg-preview.png",
+      "name": "STAMP ACTIVE STRINGER - MAROON",
+      "price": 2100,
       "id": 2
     },
     {
-      "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/HWVG6216060-TAN?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
-      "name": "CATE RIGID BAG",
-      "price": 94.5,
+      "imgUrl": "./assets/DUL00214_1728x-removebg-preview.png",
+      "name": "ESSENTIAL LONG SLEEVE CROP - SAGE",
+      "price": 1700,
       "id": 3
     },
     {
-      "imgUrl": "http://guesseu.scene7.com/is/image/GuessEU/WC0001FMSWC-G5?wid=520&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
-      "name": "GUESS CONNECT WATCH",
-      "price": 438.9,
+      "imgUrl": "./assets/DUL07397_1728x-removebg-preview.png",
+      "name": "CARNAGE DESIRE OVERSIZE TEE - HONEY MUSTARD - UNISEX",
+      "price": 2700,
       "id": 4
     },
     {
-      "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/AW6308VIS03-SAP?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
-      "name": "'70s RETRO GLAM KEFIAH",
-      "price": 20,
+      "imgUrl": "./assets/A7301535_1728x-removebg-preview.png",
+      "name": "ESSENTIAL STRINGER- SANDSTONE",
+      "price": 1600,
       "id": 5
+    },
+    {
+      "imgUrl": "./assets/A7301365_540x-removebg-preview.png",
+      "name": "RETRO CLASSIC CROP - BLACK",
+      "price": 2100,
+      "id": 6
+    },
+    {
+      "imgUrl": "./assets/A7302845_540x-removebg-preview.png",
+      "name": "ATHLEISURE V NECK CROP - JET BLACK",
+      "price": 2400,
+      "id": 7
+    },
+    {
+      "imgUrl": "./assets/DUL00114_900x-removebg-preview.png",
+      "name": "CARNAGE STAMP TEE - NAVY - UNISEX",
+      "price": 2700,
+      "id": 8
+    },
+    {
+      "imgUrl": "./assets/WhatsAppImage2022-11-23at3.26.28PM_2_900x-removebg-preview.png",
+      "name": "CARNAGE DESIRE OVERSIZE TEE - PEACH - UNISEX",
+      "price": 2500,
+      "id": 9
+    },{
+      "imgUrl": "./assets/A7403397_a5c807df-4e75-47f2-af28-ebdc8d6103f8_900x-removebg-preview.png",
+      "name": "G.O.A.T OVERSIZE TEE NIGHT BLUE",
+      "price": 3100,
+      "id": 10
+    },
+    {
+      "imgUrl": "./assets/A7403467_900x-removebg-preview.png",
+      "name": "ACTIVE DROP HOLE TANK -UNISEX- OLIVE GREEN",
+      "price": 2200,
+      "id": 11
+    },
+    {
+      "imgUrl": "./assets/A7304509_900x-removebg-preview.png",
+      "name": "MEN'S PERFORMANCE QUAD SHORT - V2 - NAVY",
+      "price": 1750,
+      "id": 12
+    },
+    {
+      "imgUrl": "./assets/A7301275_af259f2d-375f-4ee5-8921-7c232290fce4_900x-removebg-preview.png",
+      "name": "MEN'S PERFORMANCE QUAD SHORT - FIERY RED",
+      "price": 1950,
+      "id": 13
+    },
+    {
+      "imgUrl": "./assets/A7301326_900x-removebg-preview.png",
+      "name": "FLEECE JOGGER -UNISEX - BLACK",
+      "price": 3400,
+      "id": 14
+    },
+    {
+      "imgUrl": "./assets/A7304347_900x-removebg-preview.png",
+      "name": "STAMP DROP HOLE TANK - UNISEX - BLACK",
+      "price": 2700,
+      "id": 15
+    },
+    {
+      "imgUrl": "./assets/A7402959_900x-removebg-preview.png",
+      "name": "PRESTIGE SEAMLESS PERFORMANCE POLO - NAVY",
+      "price": 4500,
+      "id": 16
+    },
+    {
+      "imgUrl": "./assets/A7306834_900x-removebg-preview.png",
+      "name": "Carnage RELAXED TEE- UNISEX-ITALIC- WHITE",
+      "price": 2800,
+      "id": 17
+    },
+    {
+      "imgUrl": "./assets/A7306938_900x-removebg-preview.png",
+      "name": "Carnage RELAXED TEE- UNISEX - ASTRO - MAROON",
+      "price": 2800,
+      "id": 18
     }
   ]
   

@@ -8,13 +8,13 @@
     }
    
     .logo{
-      background-image: url('../../../assets/images-removebg-preview.png');
-      height: 50px;
-      width: 50px;
+      background-image: url('../../../assets/logo.webp');
+      height: 90px;
+      width: 90px;
       background-size: contain;
       background-repeat: no-repeat;
       margin-right: 0.2em;
-      margin: 0px;
+      margin-top: 68px;
       padding: 0px;
     }
 
@@ -30,4 +30,6 @@
   
    
   
-  
+  .active-link{
+    background-color: rgb(77, 81, 81);
+  }

@@ -7,6 +7,7 @@ body{
     }
     
     .empty-cart {
+      background-image: url('../../../assets/products-background.jpg');
       background-size: cover;
       text-align: center;
       padding: 100px;
@@ -30,8 +31,8 @@ body{
     }
     
     .sc-image {
-      height: $iconWidth;
-      width: $iconWidth;
+      height: 130px;
+      width: 100px;
     }
     
     .sc-container {

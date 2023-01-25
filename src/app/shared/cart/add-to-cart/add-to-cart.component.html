@@ -4,21 +4,21 @@
         <mat-label>Quantity</mat-label>
           <mat-select name="quantity" [(value)]="quantity">
               <mat-option *ngFor="let quantity of availableQuantities" [value]
-              ="quantity" style="background-color: rgb(61, 141, 166)">
+              ="quantity" style="background-color: rgb(26, 36, 39)">
                 {{quantity}}
               </mat-option>
           </mat-select>
       </mat-form-field>
       <span class="atc-spacer"></span>
       <button mat-raised-button color="primary" (click)="addItemToCart()" 
-      *ngIf="!(isItemAlreadyInCart|async)" style="left: 30%; background-color: rgb(61, 141, 166);">
+      *ngIf="!(isItemAlreadyInCart|async)" style="left: 30%; background-color: rgb(26, 36, 39);">
        <mat-icon>
           add_shopping_cart
        </mat-icon>
        <span class="addcart-btn-text">Add to Cart</span>
       </button>
       <button mat-raised-button color="primary" class="btn-md" [routerLink]="['../cart']"
-      *ngIf="isItemAlreadyInCart|async" style="left: 30%; background-color: rgb(61, 141, 166);">
+      *ngIf="isItemAlreadyInCart|async" style="left: 30%; background-color: rgb(26, 36, 39);">
        <mat-icon>
           shopping_cart
        </mat-icon>

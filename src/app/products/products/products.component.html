@@ -4,8 +4,9 @@
       <input
         matInput
         (keyup)="applyFilter($event.target.value)"
-        placeholder="Filter"
+        placeholder="Search"
       />
+      <mat-icon matSuffix class="search-icon">search</mat-icon>
     </mat-form-field>
 
     <table matSort mat-table [dataSource]="dataSource" class="mat-elevation-z8">
@@ -30,13 +31,13 @@
       <ng-container matColumnDef="price">
         <th mat-header-cell mat-sort-header *matHeaderCellDef>Price</th>
         <td mat-cell *matCellDef="let product">
-          {{ product.price | currency }}
+          {{ product.price | currency :'Rs.'}}
         </td>
       </ng-container>
 
       <!-- Symbol Column -->
       <ng-container matColumnDef="action">
-        <th mat-header-cell *matHeaderCellDef>Action</th>
+        <th mat-header-cell *matHeaderCellDef></th>
         <td mat-cell *matCellDef="let product">
           <pm-add-to-cart [product]="product"></pm-add-to-cart>
         </td>
@@ -48,7 +49,7 @@
     <mat-paginator
       [pageSizeOptions]="[3, 6, 9]"
       showFirstLastButtons
-    ></mat-paginator>
+    style="background-color: transparent;"></mat-paginator>
     <mat-spinner *ngIf="loading"></mat-spinner>
   </mat-card-content>
 </mat-card>
